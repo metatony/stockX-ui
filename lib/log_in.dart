@@ -1,12 +1,10 @@
-
 import 'package:flutter/material.dart';
-import 'package:stock_x/components/loginbuts.dart';
-import 'package:stock_x/components/text_field.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:stock_x/log_in.dart';
+import 'package:stock_x/home_screen.dart';
 
-class SignUp extends StatelessWidget {
-  const SignUp({super.key});
+import 'components/loginbuts.dart';
+
+class Login extends StatelessWidget {
+  const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +28,9 @@ class SignUp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
                           child: const Text(
                             'Sign Up',
                             style: TextStyle(
@@ -41,15 +41,7 @@ class SignUp extends StatelessWidget {
                           ),
                         ),
                         TextButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (BuildContext context) {
-                                return Login();
-                              }),
-                            );
-                          },
+                          onPressed: () {},
                           child: const Text(
                             'Log In',
                             style: TextStyle(
@@ -61,7 +53,34 @@ class SignUp extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const TextfieldArea(),
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 8.0),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color.fromARGB(255, 226, 226, 226),
+                            ),
+                          ),
+                          labelText: 'Username',
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 8.0),
+                      child: const TextField(
+                        obscureText: true,
+                        obscuringCharacter: '*',
+                        decoration: InputDecoration(
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color.fromARGB(255, 226, 226, 226),
+                            ),
+                          ),
+                          labelText: 'Password',
+                        ),
+                      ),
+                    ),
                     const Text(
                       'At least 8 characters, 1 uppercase letter, 1 number & 1 symbol',
                       style:
@@ -76,7 +95,14 @@ class SignUp extends StatelessWidget {
                       minWidth: double.infinity,
                       height: 55,
                       color: Colors.black,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (BuildContext context) {
+                            return const HomeScreen();
+                          }),
+                        );
+                      },
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5)),
                       child: const Text(

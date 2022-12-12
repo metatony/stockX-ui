@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:stock_x/Sign_up.dart';
-import 'package:stock_x/captcha.dart';
 import 'home_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'StockX',
 
       /// On first screen must call [SizeConfig().init(context)]
-      home: const SignUp(),
+      home: const HomeScreen(),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:stock_x/Sign_up.dart';
 
 class ConfirmScreen extends StatefulWidget {
   const ConfirmScreen({super.key});
@@ -35,14 +35,20 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: MaterialButton(
-                  
                   height: 65,
                   minWidth: 300,
                   splashColor: Colors.lightBlueAccent,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                       side: const BorderSide(color: Colors.lightBlueAccent)),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) {
+                        return const SignUp();
+                      }),
+                    );
+                  },
                   child: const Text(
                     'Press & Hold',
                     style: TextStyle(
@@ -53,7 +59,6 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                 ),
               ),
               TextButton(
-                
                 onPressed: () {},
                 child: const Text(
                   'Having a problem ?',

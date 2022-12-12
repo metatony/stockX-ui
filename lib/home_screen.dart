@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:stock_x/Sign_up.dart';
+import 'package:stock_x/captcha.dart';
 import 'package:stock_x/components/button_list.dart';
+import 'package:stock_x/log_in.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -55,11 +58,15 @@ class HomeScreen extends StatelessWidget {
                     height: 10,
                   ),
                   MaterialButton(
-                    
                     elevation: 1,
                     padding: const EdgeInsets.only(top: 15, bottom: 15),
                     color: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+                        return const ConfirmScreen();
+                      }),
+                      );
+                    },
                     child: const Text(
                       'Sign Up',
                       style: TextStyle(
@@ -75,7 +82,12 @@ class HomeScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.grey)),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+                        return const Login();
+                      }),
+                      );
+                    },
                     child: const Text('Log In',
                         style: TextStyle(
                             color: Color.fromARGB(255, 8, 126, 14),

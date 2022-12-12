@@ -54,7 +54,7 @@ class _TextfieldAreaState extends State<TextfieldArea> {
         ),
         Container(
           margin: const EdgeInsets.only(bottom: 8.0),
-          child:  const TextField(
+          child: const TextField(
             obscureText: true,
             obscuringCharacter: '*',
             decoration: InputDecoration(
@@ -64,7 +64,6 @@ class _TextfieldAreaState extends State<TextfieldArea> {
                 ),
               ),
               labelText: 'Password',
-              
             ),
           ),
         )
