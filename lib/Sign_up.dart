@@ -78,7 +78,7 @@ class SignUp extends StatelessWidget {
                       color: Colors.black,
                       onPressed: () {},
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5)),
+                          borderRadius: BorderRadius.circular(6)),
                       child: const Text(
                         'Sign Up',
                         style: TextStyle(
