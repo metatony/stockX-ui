@@ -20,7 +20,6 @@ class HomeScreen extends StatelessWidget {
           leading: const Icon(
             Icons.help_outline,
             color: Colors.grey,
-            
           ),
           title: const Text(
             'Account',
@@ -63,9 +62,11 @@ class HomeScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 15, bottom: 15),
                     color: Colors.white,
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                        return const ConfirmScreen();
-                      }),
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                          return const ConfirmScreen();
+                        }),
                       );
                     },
                     child: const Text(
@@ -84,9 +85,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                        return const Login();
-                      }),
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                          return const Login();
+                        }),
                       );
                     },
                     child: const Text('Log In',
@@ -100,7 +103,6 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
-
       ),
     );
   }
