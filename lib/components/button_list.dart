@@ -11,7 +11,7 @@ class ButtonList extends StatelessWidget {
                 onPressed: () {},
                 child: const Text(
                   'Blog',
-                  style: TextStyle(color: Color.fromARGB(255, 2, 66, 5),
+                  style: TextStyle(color: Color.fromARGB(255, 8, 126, 14),
                   )
               ),
               ),
