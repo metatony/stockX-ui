@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:stock_x/bottombar.dart';
+import 'package:stock_x/settings.dart';
 import 'home_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'StockX',
 
       /// On first screen must call [SizeConfig().init(context)]
-      home: const HomeScreen(),
+      home: const BottomBar(),
     );
   }
 }

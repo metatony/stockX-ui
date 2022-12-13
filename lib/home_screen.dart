@@ -14,18 +14,19 @@ class HomeScreen extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
+          elevation: 1,
+          centerTitle: true,
           backgroundColor: Colors.white,
           leading: const Icon(
             Icons.help_outline,
             color: Colors.grey,
+            
           ),
-          title: const Center(
-            child: Text(
-              'Account',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.black,
-              ),
+          title: const Text(
+            'Account',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.black,
             ),
           ),
         ),
@@ -99,6 +100,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
+
       ),
     );
   }
