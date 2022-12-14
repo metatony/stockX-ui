@@ -3,9 +3,11 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
 import 'package:stock_x/Sign_up.dart';
+import 'package:stock_x/captcha.dart';
 import 'package:stock_x/home_screen.dart';
 import 'package:stock_x/log_in.dart';
 import 'package:stock_x/settings.dart';
+import 'package:stock_x/tab_bar.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -20,8 +22,8 @@ class _BottomBarState extends State<BottomBar> {
   List<Widget> widgetOptions = [
     const HomeScreen(),
     const Settings(),
-    const SignUp(),
-    const Login(),
+    const TabBarr(),
+    const ConfirmScreen(),
   ];
 
   void onItemTapped(int index) {
