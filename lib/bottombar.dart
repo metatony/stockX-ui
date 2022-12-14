@@ -6,6 +6,7 @@ import 'package:stock_x/Sign_up.dart';
 import 'package:stock_x/captcha.dart';
 import 'package:stock_x/home_screen.dart';
 import 'package:stock_x/log_in.dart';
+import 'package:stock_x/product_page.dart';
 import 'package:stock_x/settings.dart';
 import 'package:stock_x/tab_bar.dart';
 
@@ -20,7 +21,7 @@ class _BottomBarState extends State<BottomBar> {
   int selectedIndex = 0;
 
   List<Widget> widgetOptions = [
-    const HomeScreen(),
+    const ProductPage(),
     const Settings(),
     const TabBarr(),
     const ConfirmScreen(),

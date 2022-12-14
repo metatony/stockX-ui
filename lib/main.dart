@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stock_x/bottombar.dart';
+import 'package:stock_x/components/image_carousel.dart';
+import 'package:stock_x/product_page.dart';
 import 'package:stock_x/settings.dart';
 import 'package:stock_x/tab_bar.dart';
 import 'home_screen.dart';
