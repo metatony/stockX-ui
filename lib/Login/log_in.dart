@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:stock_x/home_screen.dart';
+import 'package:stock_x/screens/home_screen.dart';
 
-import 'components/loginbuts.dart';
+import '../components/loginbuts.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});

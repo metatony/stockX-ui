@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stock_x/bottombar.dart';
+import 'package:stock_x/screens/bottombar.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});

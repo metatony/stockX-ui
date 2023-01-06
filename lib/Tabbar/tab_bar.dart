@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stock_x/Sign_up.dart';
-import 'package:stock_x/log_in.dart';
+import 'package:stock_x/Signup/Sign_up.dart';
+import 'package:stock_x/Login/log_in.dart';
 
 class TabBarr extends StatelessWidget {
   const TabBarr({super.key});

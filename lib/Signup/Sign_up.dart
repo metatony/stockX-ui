@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stock_x/components/loginbuts.dart';
 import 'package:stock_x/components/text_field.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:stock_x/log_in.dart';
+import 'package:stock_x/Login/log_in.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
