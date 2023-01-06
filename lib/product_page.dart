@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:stock_x/components/image_carousel.dart';
 import 'package:stock_x/item_page.dart';
-import 'package:stock_x/pop_brand.dart';
+import 'package:stock_x/onboarding/popular%20brands/popular_brands.dart';
 import 'package:stock_x/Trending%20sneakers/trend_sneakers.dart';
 
 class ProductPage extends StatelessWidget {
@@ -64,7 +64,7 @@ class ProductPage extends StatelessWidget {
               sliver: SliverToBoxAdapter(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  child: PopBrand(),
+                  child: PopularBrands(),
                 ),
               ),
             ),
