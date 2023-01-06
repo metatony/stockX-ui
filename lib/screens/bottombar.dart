@@ -7,7 +7,7 @@ import 'package:stock_x/screens/captcha.dart';
 import 'package:stock_x/screens/home_screen.dart';
 import 'package:stock_x/Login/log_in.dart';
 import 'package:stock_x/product_page.dart';
-import 'package:stock_x/Account%20page/settings.dart';
+import 'package:stock_x/Account%20page/account_page.dart';
 import 'package:stock_x/Tabbar/tab_bar.dart';
 
 class BottomBar extends StatefulWidget {
