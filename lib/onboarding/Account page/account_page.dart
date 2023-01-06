@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
-import 'package:stock_x/Account%20page/account_list.dart';
-import 'package:stock_x/Account%20page/account_widget.dart';
+import 'package:stock_x/onboarding/Account%20page/account_list.dart';
+import 'package:stock_x/onboarding/Account%20page/account_widget.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({super.key});
@@ -11,7 +11,7 @@ class AccountPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        elevation: 1,
+        elevation: 0.3,
         centerTitle: true,
         backgroundColor: Colors.white,
         leading: const Icon(

@@ -1,14 +1,9 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:stock_x/Signup/Sign_up.dart';
 import 'package:stock_x/screens/captcha.dart';
-import 'package:stock_x/screens/home_screen.dart';
-import 'package:stock_x/Login/log_in.dart';
 import 'package:stock_x/product_page.dart';
-import 'package:stock_x/Account%20page/account_page.dart';
-import 'package:stock_x/Tabbar/tab_bar.dart';
+import 'package:stock_x/onboarding/Account%20page/account_page.dart';
+import 'package:stock_x/onboarding/Tabbar/tab_bar.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -22,7 +17,7 @@ class _BottomBarState extends State<BottomBar> {
 
   List<Widget> widgetOptions = [
     const ProductPage(),
-    const Settings(),
+    const AccountPage(),
     const TabBarr(),
     const ConfirmScreen(),
   ];
@@ -42,31 +37,34 @@ class _BottomBarState extends State<BottomBar> {
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.black,
         currentIndex: selectedIndex,
-        elevation: 10,
+        elevation: 8,
         type: BottomNavigationBarType.fixed,
         onTap: onItemTapped,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.align_vertical_bottom_outlined,
+            icon: Padding(
+              padding: EdgeInsets.symmetric(vertical: 8.0),
+              child: Icon(
+                FeatherIcons.activity,
               ),
-              label: '',
-              backgroundColor: Colors.green),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
             ),
             label: '',
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.add_alert,
+              FeatherIcons.search,
             ),
             label: '',
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.person,
+              FeatherIcons.bell,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              FeatherIcons.user,
             ),
             label: '',
           )

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:stock_x/components/image_carousel.dart';
 import 'package:stock_x/item_page.dart';
 import 'package:stock_x/pop_brand.dart';
-import 'package:stock_x/trend_sneakers.dart';
+import 'package:stock_x/Trending%20sneakers/trend_sneakers.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -85,7 +85,7 @@ class ProductPage extends StatelessWidget {
               sliver: SliverToBoxAdapter(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  child: TrendSneakers(),
+                  child: TrendingSneakersCatalogue(),
                 ),
               ),
             ),

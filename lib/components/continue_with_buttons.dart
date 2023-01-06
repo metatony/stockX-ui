@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:stock_x/constants.dart';
 
-class SignLoginButtons extends StatelessWidget {
-  const SignLoginButtons({super.key});
+class ContinueWithButtons extends StatelessWidget {
+  const ContinueWithButtons({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        
         MaterialButton(
           elevation: 0,
           //padding: EdgeInsets.only(top: 18, bottom: 18),
@@ -28,11 +28,7 @@ class SignLoginButtons extends StatelessWidget {
               ),
               Text(
                 'Continue with Google',
-                style: TextStyle(
-                    color: Colors.black87,
-                    letterSpacing: 1,
-                    fontWeight: FontWeight.w700,
-                    fontSize: 14),
+                style: kGFTTextStyle,
               ),
             ],
           ),
@@ -60,11 +56,7 @@ class SignLoginButtons extends StatelessWidget {
               ),
               Text(
                 'Continue with Facebook',
-                style: TextStyle(
-                    color: Colors.black87,
-                    letterSpacing: 1,
-                    fontWeight: FontWeight.w700,
-                    fontSize: 14),
+                style: kGFTTextStyle,
               ),
             ],
           ),
@@ -92,11 +84,7 @@ class SignLoginButtons extends StatelessWidget {
               ),
               Text(
                 'Continue with Twitter',
-                style: TextStyle(
-                    color: Colors.black87,
-                    letterSpacing: 1,
-                    fontWeight: FontWeight.w700,
-                    fontSize: 14),
+                style: kGFTTextStyle,
               ),
             ],
           ),

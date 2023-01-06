@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stock_x/Signup/Sign_up.dart';
+import 'package:stock_x/onboarding/Signup/Sign_up.dart';
 
 class ConfirmScreen extends StatefulWidget {
   const ConfirmScreen({super.key});
