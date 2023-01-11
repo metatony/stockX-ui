@@ -26,7 +26,9 @@ class TrendingSneakersWidget extends StatelessWidget {
         Text(
           text,
           style: kCatalogueTextStyle,
-        )
+        ),
+                const SizedBox(height: 15),
+
       ],
     );
   }

@@ -81,6 +81,7 @@ class HomePage extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: TrendingSneakersCatalogue(),
                 ),
+                
               ),
             ),
           ],
