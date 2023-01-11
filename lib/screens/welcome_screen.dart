@@ -4,8 +4,10 @@ import 'package:stock_x/screens/captcha.dart';
 import 'package:stock_x/components/button_list.dart';
 import 'package:stock_x/onboarding/Login/log_in.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+import '../onboarding/Tabbar/tab_bar.dart';
+
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                          return const ConfirmScreen();
+                          return const TabBarr();
                         }),
                       );
                     },
@@ -88,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                          return const Login();
+                          return const TabBarr();
                         }),
                       );
                     },

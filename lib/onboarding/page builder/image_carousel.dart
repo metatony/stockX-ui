@@ -1,16 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class ImageCarousel extends StatefulWidget {
-  const ImageCarousel({super.key});
+
+class PageBuilderCarousel extends StatefulWidget {
+  const PageBuilderCarousel({super.key});
 
   @override
-  State<ImageCarousel> createState() => _ImageCarouselState();
+  State<PageBuilderCarousel> createState() => _PageBuilderCarouselState();
 }
 
-class _ImageCarouselState extends State<ImageCarousel> {
+class _PageBuilderCarouselState extends State<PageBuilderCarousel> {
   //final PageController _pageViewController = PageController(initialPage: 0);
   //int _activePage = 0;
 
@@ -22,7 +20,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
         alignment: Alignment.topLeft,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(12),
+           //borderRadius: BorderRadius.circular(12),
             child: PageView(
               // controller: _pageViewController,
               // onPageChanged: (value) {
@@ -42,7 +40,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
           ),
           Container(
             margin: const EdgeInsets.all(18),
-            width: 300,
+            width: 320,
             child: const Text(
               'The Biggest Wins Are Waiting For You',
               style: TextStyle(

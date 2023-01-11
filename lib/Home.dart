@@ -1,33 +1,28 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
-import 'package:stock_x/components/image_carousel.dart';
-import 'package:stock_x/item_page.dart';
+import 'package:stock_x/onboarding/Category/category.dart';
+import 'package:stock_x/onboarding/page%20builder/image_carousel.dart';
 import 'package:stock_x/onboarding/popular%20brands/popular_brands.dart';
 import 'package:stock_x/onboarding/Trending%20sneakers/trend_sneakers.dart';
 
-class ProductPage extends StatelessWidget {
-  const ProductPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        backgroundColor: Colors.white,
-      ),
+    return const Scaffold(
+      //appBar: AppBar(
+      //elevation: 1,
+      //ackgroundColor: Colors.white,
+      //),
       backgroundColor: Colors.white,
-      body: const SafeArea(
+      body: SafeArea(
         child: CustomScrollView(
           slivers: [
-            SliverPadding(
-              padding: EdgeInsets.symmetric(horizontal: 8),
-              sliver: SliverToBoxAdapter(
-                child: ImageCarousel(),
-              ),
+            SliverToBoxAdapter(
+              child: PageBuilderCarousel(),
             ),
             SliverPadding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),
               sliver: SliverToBoxAdapter(
                 child: Text(
                   'Shop by Category',
@@ -43,12 +38,12 @@ class ProductPage extends StatelessWidget {
               sliver: SliverToBoxAdapter(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  child: ItemPage(),
+                  child: Category(),
                 ),
               ),
             ),
             SliverPadding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 16),
+              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),
               sliver: SliverToBoxAdapter(
                 child: Text(
                   'Popular Brands',
@@ -59,17 +54,16 @@ class ProductPage extends StatelessWidget {
                 ),
               ),
             ),
-            SliverPadding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
-              sliver: SliverToBoxAdapter(
+            
+              SliverToBoxAdapter(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: PopularBrands(),
                 ),
               ),
-            ),
+            
             SliverPadding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 16),
+              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),
               sliver: SliverToBoxAdapter(
                 child: Text(
                   'Trending Sneakers',

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stock_x/components/continue_with_buttons.dart';
 import 'package:stock_x/onboarding/Signup/signup_textfield.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:stock_x/onboarding/Login/log_in.dart';
 import 'package:stock_x/constants.dart';
 import 'package:stock_x/widgets/black_signup_button.dart';
 

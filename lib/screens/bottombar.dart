@@ -1,9 +1,9 @@
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:stock_x/screens/captcha.dart';
-import 'package:stock_x/product_page.dart';
+import 'package:stock_x/Home.dart';
 import 'package:stock_x/onboarding/Account%20page/account_page.dart';
-import 'package:stock_x/onboarding/Tabbar/tab_bar.dart';
+import 'package:stock_x/screens/notification_page.dart';
+import 'package:stock_x/screens/search_page.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -16,10 +16,10 @@ class _BottomBarState extends State<BottomBar> {
   int selectedIndex = 0;
 
   List<Widget> widgetOptions = [
-    const ProductPage(),
+    const HomePage(),
+    const SearchPage(),
+    const NotificationPage(),
     const AccountPage(),
-    const TabBarr(),
-    const ConfirmScreen(),
   ];
 
   void onItemTapped(int index) {
@@ -43,7 +43,7 @@ class _BottomBarState extends State<BottomBar> {
         items: const [
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.symmetric(vertical: 8.0),
+              padding: EdgeInsets.symmetric(vertical: 1.0),
               child: Icon(
                 FeatherIcons.activity,
               ),

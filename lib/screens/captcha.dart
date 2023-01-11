@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:stock_x/onboarding/Signup/Sign_up.dart';
+import 'package:stock_x/screens/welcome_screen.dart';
 
-class ConfirmScreen extends StatefulWidget {
-  const ConfirmScreen({super.key});
+class CaptchaScreen extends StatefulWidget {
+  const CaptchaScreen({super.key});
 
   @override
-  State<ConfirmScreen> createState() => _ConfirmScreenState();
+  State<CaptchaScreen> createState() => _CaptchaScreenState();
 }
 
-class _ConfirmScreenState extends State<ConfirmScreen> {
+class _CaptchaScreenState extends State<CaptchaScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +28,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                   'Press & Hold to confirm you are a human (and not a bot)',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 17,
                     color: Colors.black45,
                   ),
                 ),
@@ -45,7 +46,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (BuildContext context) {
-                        return const SignUp();
+                        return const WelcomeScreen();
                       }),
                     );
                   },

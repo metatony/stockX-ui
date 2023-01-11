@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:stock_x/screens/bottombar.dart';
 
-import '../screens/home_screen.dart';
+import '../screens/welcome_screen.dart';
 
 class BlackSignUpButton extends StatelessWidget {
   const BlackSignUpButton({
@@ -19,18 +20,15 @@ class BlackSignUpButton extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (BuildContext context) {
-            return const HomeScreen();
+            return const BottomBar();
           }),
         );
       },
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
       child: const Text(
         'Sign Up',
         style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 16),
+            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
       ),
     );
   }
